@@ -196,7 +196,7 @@
 
 	function qa_update_q_counts_for_a($questionid)
 /*
-	Perform various common cached count updating operations to reflect changes in an answer of question $questionid
+	Perform various common cached count updating operations to reflect changes in an answer of question $questioni
 */
 	{
 		qa_db_post_acount_update($questionid);
