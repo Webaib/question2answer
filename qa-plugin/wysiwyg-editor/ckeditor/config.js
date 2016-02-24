@@ -34,8 +34,8 @@ CKEDITOR.on('dialogDefinition', function( ev ) {
     var dialogDefinition = ev.data.definition;
 
     if ( dialogName == 'image' ) {
+    	dialogDefinition.width = 340;
     	var infoTab = dialogDefinition.getContents('info');
-    	infoTab.elements['htmlPreview'].width = 100;
     	// infoTab.remove('htmlPreview');
     	infoTab.remove( 'txtBorder' );
         infoTab.remove( 'txtHSpace' );
