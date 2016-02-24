@@ -11,16 +11,7 @@ CKEDITOR.editorConfig = function( config ) {
 
 	// The toolbar arrangement, two rows of buttons
 	config.toolbar = [
-		{ name: 'basic', items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript' ] },
-		{ name: 'color', items: [ 'TextColor', 'BGColor' ] },
-		{ name: 'align', items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-		{ name: 'clipboard', items: [ 'Cut', 'Copy', 'Paste', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
-		'/',
-		{ name: 'font', items: [ 'Font', 'FontSize', 'Format' ] },
-		{ name: 'paragraph', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', 'Blockquote' ] },
-		{ name: 'links', items: [ 'Link', 'Unlink' ] },
-		{ name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar', 'Smiley' ] },
-		{ name: 'last', items: [ 'RemoveFormat', 'Maximize' ] }
+		{ name: 'insert', items: [ 'Image'] },
 	];
 
 	// Set the most common block elements
