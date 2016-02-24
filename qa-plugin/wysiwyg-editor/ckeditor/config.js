@@ -14,7 +14,7 @@ CKEDITOR.editorConfig = function(config) {
 	// The toolbar arrangement, two rows of buttons
 	config.toolbar = [ {
 		name : 'insert',
-		items : [ 'Image' ]
+		items : [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar', 'Smiley' ]
 	} ];
 
 	// Set the most common block elements
