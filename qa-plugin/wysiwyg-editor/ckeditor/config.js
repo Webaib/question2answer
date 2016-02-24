@@ -34,13 +34,13 @@ CKEDITOR.on('dialogDefinition', function( ev ) {
     var dialogDefinition = ev.data.definition;
 
     if ( dialogName == 'image' ) {
+    	var infoTab = dialogDefinition.getContents('info');
+    	infoTab.remove('htmlPreview');
+    	infoTab.remove( 'txtBorder' );
+        infoTab.remove( 'txtHSpace' );
+        infoTab.remove( 'txtVSpace' );
+        
         dialogDefinition.onShow = function() {
-        	var infoTab = dialogDefinition.getContents( 'info' );
-        	infoTab.remove('htmlPreview');
-        	infoTab.remove( 'txtBorder' );
-            infoTab.remove( 'txtHSpace' );
-            infoTab.remove( 'txtVSpace' );
-            
             this.selectPage( 'Upload' );
         };
     }
