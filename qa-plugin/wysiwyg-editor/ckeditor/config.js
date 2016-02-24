@@ -27,7 +27,7 @@ CKEDITOR.editorConfig = function( config ) {
     // Prevent blank paragraphs
     config.fillEmptyBlocks = false;
     
-    config.image_previewText = 'Image preview';
+    config.image_previewText = 'Image previe';
 };
 
 CKEDITOR.on('dialogDefinition', function( ev ) {
@@ -38,7 +38,7 @@ CKEDITOR.on('dialogDefinition', function( ev ) {
     if ( dialogName == 'image' ) {
         dialogDefinition.onShow = function() {
             // This code will open the Link tab.
-            this.selectPage( 'Link' );
+            this.selectPage( 'Upload' );
         };
     }
 });
