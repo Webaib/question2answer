@@ -26,8 +26,6 @@ CKEDITOR.editorConfig = function( config ) {
 
     // Prevent blank paragraphs
     config.fillEmptyBlocks = false;
-    
-    //config.image_previewText = '';
 };
 
 CKEDITOR.on('dialogDefinition', function( ev ) {
@@ -38,7 +36,11 @@ CKEDITOR.on('dialogDefinition', function( ev ) {
     if ( dialogName == 'image' ) {
         dialogDefinition.onShow = function() {
         	var infoTab = dialogDefinition.getContents( 'info' );
-        	infoTab.remove('Preview');
+        	infoTab.remove('htmlPreview');
+        	infoTab.remove( 'txtBorder' );
+            infoTab.remove( 'txtHSpace' );
+            infoTab.remove( 'txtVSpace' );
+            
             this.selectPage( 'Upload' );
         };
     }
