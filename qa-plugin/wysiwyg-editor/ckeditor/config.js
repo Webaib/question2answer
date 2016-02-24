@@ -38,12 +38,12 @@ CKEDITOR.on('dialogDefinition', function(ev) {
 	var dialogDefinition = ev.data.definition;
 
 	if (dialogName == 'image') {
-		dialogDefinition.width = 340;
+		// dialogDefinition.width = 340;
 		var infoTab = dialogDefinition.getContents('info');
 		// infoTab.remove('htmlPreview');
-		// infoTab.remove( 'txtBorder' );
-		// infoTab.remove( 'txtHSpace' );
-		// infoTab.remove( 'txtVSpace' );
+		infoTab.remove('txtBorder');
+		infoTab.remove('txtHSpace');
+		infoTab.remove('txtVSpace');
 
 		dialogDefinition.onShow = function() {
 			this.selectPage('Upload');
