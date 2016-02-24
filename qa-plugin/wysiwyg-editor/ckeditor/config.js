@@ -32,21 +32,21 @@ CKEDITOR.editorConfig = function(config) {
 	config.fillEmptyBlocks = false;
 };
 
-CKEDITOR.on('dialogDefinition', function(ev) {
-	// Take the dialog window name and its definition from the event data.
-	var dialogName = ev.data.name;
-	var dialogDefinition = ev.data.definition;
+//CKEDITOR.on('dialogDefinition', function(ev) {
+//	// Take the dialog window name and its definition from the event data.
+//	var dialogName = ev.data.name;
+//	var dialogDefinition = ev.data.definition;
 
-	if (dialogName == 'image') {
-		// dialogDefinition.width = 340;
-		var infoTab = dialogDefinition.getContents('info');
-		// infoTab.remove('htmlPreview');
-		infoTab.remove('txtBorder');
-		infoTab.remove('txtHSpace');
-		infoTab.remove('txtVSpace');
-
-		dialogDefinition.onShow = function() {
-			this.selectPage('Upload');
-		};
-	}
-});
+//	if (dialogName == 'image') {
+//		// dialogDefinition.width = 340;
+//		var infoTab = dialogDefinition.getContents('info');
+//		// infoTab.remove('htmlPreview');
+//		infoTab.remove('txtBorder');
+//		infoTab.remove('txtHSpace');
+//		infoTab.remove('txtVSpace');
+//
+//		dialogDefinition.onShow = function() {
+//			this.selectPage('Upload');
+//		};
+//	}
+//});
