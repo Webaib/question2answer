@@ -15,6 +15,9 @@ CKEDITOR.editorConfig = function(config) {
 	config.toolbar = [ {
 		name : 'insert',
 		items : [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar', 'Smiley' ]
+	}, {
+		name : 'links',
+		items : [ 'Link', 'Unlink' ]
 	} ];
 
 	// Set the most common block elements
