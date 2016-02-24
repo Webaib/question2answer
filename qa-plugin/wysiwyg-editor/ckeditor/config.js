@@ -26,5 +26,6 @@ CKEDITOR.editorConfig = function( config ) {
 
     // Prevent blank paragraphs
     config.fillEmptyBlocks = false;
-
+    
+    config.image_previewText = 'Image preview';
 };
