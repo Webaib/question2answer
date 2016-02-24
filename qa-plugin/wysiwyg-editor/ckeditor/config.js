@@ -14,10 +14,7 @@ CKEDITOR.editorConfig = function(config) {
 	// The toolbar arrangement, two rows of buttons
 	config.toolbar = [ {
 		name : 'insert',
-		items : [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar', 'Smiley' ]
-	}, {
-		name : 'links',
-		items : [ 'Link', 'Unlink' ]
+		items : [ 'Image' ]
 	} ];
 
 	// Set the most common block elements
@@ -44,14 +41,14 @@ CKEDITOR.on('dialogDefinition', function(ev) {
 
 	if (dialogName == 'image') {
 		dialogDefinition.width = 340;
-		// var infoTab = dialogDefinition.getContents('info');
+		var infoTab = dialogDefinition.getContents('info');
 		// // infoTab.remove('htmlPreview');
-		// infoTab.remove('txtBorder');
-		// infoTab.remove('txtHSpace');
-		// infoTab.remove('txtVSpace');
-		//
-		// dialogDefinition.onShow = function() {
-		// this.selectPage('Upload');
-		// };
+		infoTab.remove('txtBorder');
+		infoTab.remove('txtHSpace');
+		infoTab.remove('txtVSpace');
+
+		dialogDefinition.onShow = function() {
+			this.selectPage('Upload');
+		};
 	}
 });
