@@ -1876,6 +1876,10 @@ input[type="submit"], button {
 .qa-form-wide-button-cancel {
 	background: #E06DA9 none;
 }
+.qa-form-tall-button-cancel:hover, .qa-form-tall-button-cancel:focus,
+.qa-form-wide-button-cancel:hover, .qa-form-wide-button-cancel:focus {
+	background-color: #E06DA9;
+}
 
 .qa-form-wide-label, .qa-form-wide-data,
 .qa-form-tall-spacer {
